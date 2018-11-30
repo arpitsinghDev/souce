@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick=create(myarray)>click</button>
+	<button onclick=show(myarray)>click</button>
+	<div id="list"></div>
+	<script> 
+	
+		function getRandomFloat(min, max) {
+		return Math.floor(Math.random() * (max - min) + min)+"<br>";
+		}
+
+			var myarray=["arpit","singh","rajput","developer"];
+			function create(me){
+				var s=""
+				for (var i=0; i<me.length; i++) {
+					s+="<br>"+me[i]
+				}
+				document.getElementById("list").innerHTML=s
+			}
+			function show(my){
+			var j,x,i=0,len=my.length;
+			for (i;i<len;i++) {
+				j=Math.floor(Math.random()*len)
+				x=my[i]
+				my[i]=my[j]
+				my[j]=x
+				console.log(my)
+			}	
+		}
+		
+	</script>
+		
+</body>
+</html>

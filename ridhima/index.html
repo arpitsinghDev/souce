@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>game</title>
+	<style type="text/css">
+	body
+	{
+	margin:0px;
+	padding:0px;
+	justify-content:center;
+	
+	}
+	div{
+	margin:0px;
+	border:1px solid red;
+	}
+	.box{
+		width:100%;
+		height:700px;
+	}
+	.box>div{
+		width:20%;
+		height:35%;
+		border:1px solid green;
+		position:relative;
+		display:inline-block;
+		margin-top:15%;
+		margin-left:2%;
+		border-radius:2px;
+	}
+	h2{
+		font-size:70px;
+	}
+	div>span{
+		position:absolute;
+		font-size:200px;
+	}
+	</style>
+</head>
+<body>
+	<h1>pick one</h1>
+	
+	<div class="box" id="box">
+	<h2 id="question"><span></span></h2>
+	<div id="option1"><span></span></div>
+	<div id="option2"><span></span></div>
+	<div id="option3"><span></span></div>
+	<div id="option4"><span></span></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
